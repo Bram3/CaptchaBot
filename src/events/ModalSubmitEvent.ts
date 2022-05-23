@@ -27,7 +27,6 @@ export class ModalSubmitEvent {
       return interaction.reply({
         content:
           "There is currently no active captcha. (Your captcha may have timed out.) Please generate a new one by pressing verify the button.",
-        ephemeral: true,
       });
     if (
       actionRow.components[0].value.toUpperCase() !==
@@ -37,7 +36,6 @@ export class ModalSubmitEvent {
         content: `Your answer is incorrect! (The answer was: ${this.captchaValues.get(
           interaction.user.id
         )}) Please generate a new one by pressing verify the button.`,
-        ephemeral: true,
       });
     interaction.reply(
       "Your anser is correct! You have been given the verified role."
