@@ -1,0 +1,29 @@
+{
+  "name": "reaction_roles",
+  "version": "1.0.0",
+  "description": "A free reaction roles bot.",
+  "main": "build/Main.js",
+  "repository": "https://github.com/Bram3/ReactionRoles.git",
+  "author": "Bram",
+  "license": "MIT",
+  "dependencies": {
+    "@discordx/importer": "^1.1.9",
+    "@haileybot/captcha-generator": "^1.7.0",
+    "discord.js": "^13.7.0",
+    "discordx": "^9.6.0",
+    "dotenv": "^16.0.1",
+    "reflect-metadata": "^0.1.13",
+    "ts-node": "^10.8.0",
+    "tsyringe": "^4.6.0",
+    "winston": "^3.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.35",
+    "typescript": "^4.6.4"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/Main.js",
+    "dev": "ts-node src/Main.ts"
+  }
+}
