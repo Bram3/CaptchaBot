@@ -27,7 +27,7 @@ export class SetupVerifyMessage {
 
     const embed = new MessageEmbed()
       .setTitle("Verify")
-      .setDescription("Click to button to verify.")
+      .setDescription("Click the button to verify.")
       .setColor("WHITE");
     interaction.reply({ embeds: [embed], components: [messageActionRow] });
   }
