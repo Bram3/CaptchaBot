@@ -36,9 +36,9 @@ export class ButtonClickEvent {
     }
 
     const accountAge =
-      (interaction.user.createdAt.getTime() - new Date().getTime()) /
+      (new Date().getTime() - interaction.user.createdAt.getTime()) /
       (1000 * 3600 * 24);
-    if (accountAge > 7) {
+    if (accountAge < 7) {
       let captcha = new Captcha();
       const attachement = new MessageAttachment(
         captcha.JPEGStream,
