@@ -38,7 +38,7 @@ export class ModalSubmitEvent {
         )}) Please generate a new one by pressing verify the button.`,
       });
     interaction.reply(
-      "Your anser is correct! You have been given the verified role."
+      "Your answer is correct! You have been given the verified role."
     );
 
     const { GUILD_ID, VERIFIED_ROLE_ID, UNVERIFIED_ROLE_ID } = process.env;
