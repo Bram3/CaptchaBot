@@ -1,9 +1,9 @@
-import { ArgsOf, Client, Discord, On, Once } from "discordx";
+import { ArgsOf, Discord, On } from "discordx";
+import { exit } from "process";
 import { inject, injectable } from "tsyringe";
+
 import { InjectionTokens } from "../DI/InjectionTokens";
 import logger from "../utils/Logger";
-import { exit } from "process";
-import { text } from "stream/consumers";
 
 @Discord()
 @injectable()

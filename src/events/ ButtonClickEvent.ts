@@ -1,5 +1,4 @@
 import Captcha = require("@haileybot/captcha-generator");
-import { profileEnd } from "console";
 import {
   ButtonInteraction,
   GuildMemberRoleManager,
@@ -14,6 +13,7 @@ import {
 import { ButtonComponent, Discord } from "discordx";
 import { exit } from "process";
 import { inject, injectable } from "tsyringe";
+
 import { InjectionTokens } from "../DI/InjectionTokens";
 import logger from "../utils/Logger";
 

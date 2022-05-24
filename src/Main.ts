@@ -1,11 +1,14 @@
 import "reflect-metadata";
-import { config } from "dotenv";
-import logger from "./utils/Logger";
-import { Client, DIService } from "discordx";
-import { Intents } from "discord.js";
+
 import { importx } from "@discordx/importer";
+import { Intents } from "discord.js";
+import { Client, DIService } from "discordx";
+import { config } from "dotenv";
 import { container, inject, singleton } from "tsyringe";
+
 import { InjectionTokens } from "./DI/InjectionTokens";
+import logger from "./utils/Logger";
+
 config();
 
 @singleton()

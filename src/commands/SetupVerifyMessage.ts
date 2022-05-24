@@ -1,13 +1,10 @@
 import {
   CommandInteraction,
   MessageActionRow,
-  MessageAttachment,
   MessageButton,
   MessageEmbed,
-  TextChannel,
 } from "discord.js";
-import { Discord, Slash, SlashOption, Client } from "discordx";
-import { inject, injectable } from "tsyringe";
+import { Discord, Slash } from "discordx";
 const Captcha = require("@haileybot/captcha-generator");
 
 @Discord()

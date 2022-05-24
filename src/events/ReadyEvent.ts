@@ -1,5 +1,6 @@
 import { Client, Discord, Once } from "discordx";
 import { injectable } from "tsyringe";
+
 import logger from "../utils/Logger";
 
 @Discord()
